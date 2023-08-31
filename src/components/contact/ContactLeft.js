@@ -1,5 +1,10 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
 const ContactLeft = () => {
@@ -16,17 +21,24 @@ const ContactLeft = () => {
           FullStack Developer || Data Analyst
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
+          Looking for more Information about Me? Please contact Me!
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+6285321542548</span>
+          Phone:{" "}
+          <a
+            href="https://wa.me/+6285321542548"
+            target="_blank"
+            className="text-lightText"
+          >
+            +62853-2154-2548
+          </a>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">fauzanabdulbasith@gmail.com</span>
+          Email:{" "}
+          <span className="text-lightText">fauzanabdulbasith@gmail.com</span>
         </p>
       </div>
-      <div className="flex flex-col gap-4">
+      {/* <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
@@ -39,9 +51,9 @@ const ContactLeft = () => {
             <FaLinkedinIn />
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
-export default ContactLeft
+export default ContactLeft;

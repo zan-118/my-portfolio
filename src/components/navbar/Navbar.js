@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGithub,
+  FaGitlab,
+} from "react-icons/fa";
 import { logo } from "../../assets/index";
 import { navLinksdata } from "../../constants";
 
@@ -76,15 +83,48 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  <a
+                    href="https://www.facebook.com/fauzan118/"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
                     <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a
+                    href="https://www.instagram.com/fauzan_1118/"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://twitter.com/Fauzan_1118"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
                     <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a
+                    href="https://github.com/zan-118/"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://gitlab.com/fauzan118"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
+                    <FaGitlab />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/fauzan-abdul-basith-8b2a6312b/"
+                    target="_blank"
+                    className="bannerIcon"
+                  >
                     <FaLinkedinIn />
-                  </span>
+                  </a>
                 </div>
               </div>
               <span

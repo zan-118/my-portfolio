@@ -1,6 +1,6 @@
 import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaMobile, FaGlobe, FaDatabase} from "react-icons/fa";
+import { SiProgress, SiAntdesign, SiDatacamp, SiGoogleanalytics } from "react-icons/si";
 
 // Features Data
 export const featuresData = [
@@ -23,13 +23,13 @@ export const featuresData = [
   },
   {
     id: 4,
-    icon: <FaMobile />,
+    icon: <FaDatabase/>,
     title: "Database",
     des: "PostgreSQL, BigQuery",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
+    icon: <SiGoogleanalytics />,
     title: "Data Analysis",
     des: "Rstudio, Spreadsheet, Data Visualization",
   },
