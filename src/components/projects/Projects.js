@@ -37,10 +37,12 @@ const Projects = () => {
           src={projectThree}
         />
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="LPK BINA MUDA MANDIRI"
+          des="a landing page for the company profile. built using wordpress.
+          "
           src={projectThree}
+          sourceCode="https://github.com/zan-118/lpk-bmm-repo.git"
+          websiteLink="https://lpkbinamudamandiri.com/"
         />
         <ProjectsCard
           title="Gaming Website"
