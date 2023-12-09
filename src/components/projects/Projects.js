@@ -31,15 +31,17 @@ const Projects = () => {
           websiteLink="https://zan-118.github.io/portofolio/"
         />
         <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="LPK BINA MUDA MANDIRI"
+          des="a landing page for the company profile. built using wordpress.
+            "
           src={projectThree}
+          sourceCode="https://github.com/zan-118/lpk-bmm-repo.git"
+          websiteLink="https://lpkbinamudamandiri.com/"
         />
         <ProjectsCard
           title="LPK BINA MUDA MANDIRI"
           des="a landing page for the company profile. built using wordpress.
-          "
+            "
           src={projectThree}
           sourceCode="https://github.com/zan-118/lpk-bmm-repo.git"
           websiteLink="https://lpkbinamudamandiri.com/"
