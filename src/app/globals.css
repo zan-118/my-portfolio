@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bodyColor: #1f242d;
+  --color-lightText: #c4cfde;
+  --color-designColor: #0ef;
+  
+  --background-image-boxBg: linear-gradient(145deg, #1e2024, #23272b);
+  
+  --font-bodyFont: var(--font-bodyFont);
+  --font-titleFont: var(--font-titleFont);
+  
+  --shadow-shadowOne: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 375px;
+  --breakpoint-sml: 500px;
+  --breakpoint-md: 667px;
+  --breakpoint-mdl: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-lgl: 1024px;
+  --breakpoint-xl: 1280px;
+}
+
+:root {
+  --background: #1f242d;
+  --foreground: #c4cfde;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-bodyFont);
+}
+
+@utility bannerIcon {
+  @apply w-16 h-16 bg-black/25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-black/40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
+}
+
+@utility resumeLi {
+  @apply w-full h-20 bg-black/25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-black/40 duration-300 items-center border-[1px] border-transparent rounded-none;
+}
+
+@utility bgOpacity {
+  @apply bg-black/40;
+}
+
+@utility contactInput {
+  @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
+}
+
+@utility contactTextArea {
+  @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none;
+}
+
+.active {
+  @apply text-white;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
